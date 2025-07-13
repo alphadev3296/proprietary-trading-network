@@ -11,7 +11,7 @@ echo "Wallet: ${WALLET}"
 echo "Hotkey: ${HOTKEY}"
 
 # activate venv
-source .venv/bin/activate
+source venv/bin/activate
 
 # run miner
 python -m neurons.miner --wallet.name ${WALLET} --wallet.hotkey ${HOTKEY} --logging.debug --subtensor.network main --netuid 8 --start-dashboard
